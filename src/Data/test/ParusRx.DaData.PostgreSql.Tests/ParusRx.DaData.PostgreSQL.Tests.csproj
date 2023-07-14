@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\ParusRx.Data.PostgreSQL\ParusRx.Data.PostgreSQL.csproj" />
+    <ProjectReference Include="..\..\src\ParusRx.Data.PostgreSql\ParusRx.Data.PostgreSql.csproj" />
   </ItemGroup>
 
 </Project>

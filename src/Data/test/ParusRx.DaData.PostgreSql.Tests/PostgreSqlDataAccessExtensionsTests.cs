@@ -4,9 +4,9 @@
 using Npgsql;
 
 using ParusRx.Data.Core;
-using ParusRx.Data.PostgreSQL;
+using ParusRx.Data.PostgreSql;
 
-namespace ParusRx.DaData.PostgreSQL.Tests;
+namespace ParusRx.DaData.PostgreSql.Tests;
 
 public class PostgreSqlDataAccessExtensionsTests
 {
@@ -19,7 +19,7 @@ public class PostgreSqlDataAccessExtensionsTests
         IConnection? connection = null;
 
         // Act
-        var exception = Assert.Throws<ArgumentNullException>(() => connection!.UsePostgreSQL(ConnectionString));
+        var exception = Assert.Throws<ArgumentNullException>(() => connection!.UsePostgreSql(ConnectionString));
 
         // Assert
         Assert.Equal("connection", exception.ParamName);
@@ -32,7 +32,7 @@ public class PostgreSqlDataAccessExtensionsTests
         var connection = new Connection();
 
         // Act
-        var exception = Assert.Throws<ArgumentNullException>(() => connection.UsePostgreSQL(null!));
+        var exception = Assert.Throws<ArgumentNullException>(() => connection.UsePostgreSql(null!));
 
         // Assert
         Assert.Equal("connectionString", exception.ParamName);
@@ -45,7 +45,7 @@ public class PostgreSqlDataAccessExtensionsTests
         var connection = new Connection();
 
         // Act
-        connection.UsePostgreSQL(ConnectionString);
+        connection.UsePostgreSql(ConnectionString);
 
         // Assert
         Assert.NotNull(connection.ConnectionFactory);
@@ -58,7 +58,7 @@ public class PostgreSqlDataAccessExtensionsTests
         var connection = new Connection();
 
         // Act
-        connection.UsePostgreSQL(ConnectionString);
+        connection.UsePostgreSql(ConnectionString);
 
         // Assert
         Assert.IsType<ConnectionFactory<NpgsqlConnection>>(connection.ConnectionFactory);
@@ -71,7 +71,7 @@ public class PostgreSqlDataAccessExtensionsTests
         var serviceCollection = new ServiceCollection();
 
         // Act
-        serviceCollection.AddDataAccess(c => c.UsePostgreSQL(ConnectionString));
+        serviceCollection.AddDataAccess(c => c.UsePostgreSql(ConnectionString));
 
         // Assert
         var serviceProvider = serviceCollection.BuildServiceProvider();

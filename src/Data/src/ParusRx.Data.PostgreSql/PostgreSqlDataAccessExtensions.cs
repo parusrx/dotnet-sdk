@@ -4,7 +4,7 @@
 using Npgsql;
 using ParusRx.Data.Core;
 
-namespace ParusRx.Data.PostgreSQL;
+namespace ParusRx.Data.PostgreSql;
 
 /// <summary>
 /// Extension methods for <see cref="IConnection"/> to configure PostgreSQL.
@@ -19,7 +19,7 @@ public static class PostgreSqlDataAccessExtensions
     /// <returns>The <see cref="IConnection"/> so that additional calls can be chained.</returns>
     /// <exception cref="ArgumentNullException">The <paramref name="connection"/> is <c>null</c>.</exception>
     /// <exception cref="ArgumentNullException">The <paramref name="connectionString"/> is <c>null</c>.</exception>   
-    public static IConnection UsePostgreSQL(this IConnection connection, string connectionString)
+    public static IConnection UsePostgreSql(this IConnection connection, string connectionString)
     {
         ArgumentNullException.ThrowIfNull(connection, nameof(connection));
         ArgumentNullException.ThrowIfNull(connectionString, nameof(connectionString));

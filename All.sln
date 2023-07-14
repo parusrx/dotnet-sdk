@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParusRx.Data.Oracle", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParusRx.DaData.Oracle.Tests", "src\Data\test\ParusRx.DaData.Oracle.Tests\ParusRx.DaData.Oracle.Tests.csproj", "{1C1F1719-5BAF-43B5-82B3-37C5D38739EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParusRx.Data.PostgreSQL", "src\Data\src\ParusRx.Data.PostgreSQL\ParusRx.Data.PostgreSQL.csproj", "{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParusRx.Data.PostgreSql", "src\Data\src\ParusRx.Data.PostgreSql\ParusRx.Data.PostgreSql.csproj", "{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParusRx.DaData.PostgreSQL.Tests", "src\Data\test\ParusRx.DaData.PostgreSQL.Tests\ParusRx.DaData.PostgreSQL.Tests.csproj", "{CEB78930-234A-42DF-9571-8F2430B0DEB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParusRx.DaData.PostgreSql.Tests", "src\Data\test\ParusRx.DaData.PostgreSQL.Tests\ParusRx.DaData.PostgreSql.Tests.csproj", "{CEB78930-234A-42DF-9571-8F2430B0DEB0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{30D176EB-D522-4440-B2FD-2369D15DB312}"
 EndProject
