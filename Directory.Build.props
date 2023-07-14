@@ -6,6 +6,8 @@
     <PackageProjectUrl>https://github.com/parusrx/dotnet-sdk</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/parusrx/dotnet-sdk</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>parusrx;sdk</PackageTags>
   </PropertyGroup>
 
   <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->

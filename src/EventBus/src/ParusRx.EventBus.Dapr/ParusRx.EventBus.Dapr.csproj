@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Parus RX Event Bus components for Dapr</Description>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageTags>$(PackageTags);eventbus;dapr</PackageTags>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ParusRx.EventBus\ParusRx.EventBus.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.Client" Version="1.11.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0-preview.6.23329.7" />
+  </ItemGroup>
+
+</Project>

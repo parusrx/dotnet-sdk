@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Parus RX Event Bus abstractions for .NET</Description>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageTags>$(PackageTags);eventbus</PackageTags>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

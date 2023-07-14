@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Parus RX Event Bus components for multi-tenancy.</Description>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageTags>$(PackageTags);eventbus;tenant;multitenancy</PackageTags>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ParusRx.EventBus.Abstractions\ParusRx.EventBus.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
