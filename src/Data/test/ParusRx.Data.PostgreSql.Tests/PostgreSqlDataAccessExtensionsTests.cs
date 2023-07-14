@@ -4,9 +4,8 @@
 using Npgsql;
 
 using ParusRx.Data.Core;
-using ParusRx.Data.PostgreSql;
 
-namespace ParusRx.DaData.PostgreSql.Tests;
+namespace ParusRx.Data.PostgreSql.Tests;
 
 public class PostgreSqlDataAccessExtensionsTests
 {

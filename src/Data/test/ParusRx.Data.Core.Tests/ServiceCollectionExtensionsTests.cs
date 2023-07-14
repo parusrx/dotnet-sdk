@@ -1,7 +1,7 @@
 // Copyright (c) The Parus RX Authors. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
-namespace ParusRx.DaData.Core.Tests;
+namespace ParusRx.Data.Core.Tests;
 
 public class ServiceCollectionExtensionsTests
 {

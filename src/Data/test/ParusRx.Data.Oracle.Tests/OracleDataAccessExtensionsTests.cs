@@ -4,9 +4,8 @@
 using Oracle.ManagedDataAccess.Client;
 
 using ParusRx.Data.Core;
-using ParusRx.Data.Oracle;
 
-namespace ParusRx.DaData.Oracle.Tests;
+namespace ParusRx.Data.Oracle.Tests;
 
 public class OracleDataAccessExtensionsTests
 {
