@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{919AA127-8407-4436-BC62-B7D0EA477DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Data.Core", "src\ParusRx.Data.Core\ParusRx.Data.Core.csproj", "{80B528ED-DB5F-4243-BCAB-3A7DB509B13A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{087B096F-8231-450F-8258-648D33C2FF13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.DaData.Core.Tests", "test\ParusRx.DaData.Core.Tests\ParusRx.DaData.Core.Tests.csproj", "{4F19E074-3ABD-488E-8B39-3810CDF41646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Data.Oracle", "src\ParusRx.Data.Oracle\ParusRx.Data.Oracle.csproj", "{22FDD84C-7957-40BA-8FB9-417A8D11B808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.DaData.Oracle.Tests", "test\ParusRx.DaData.Oracle.Tests\ParusRx.DaData.Oracle.Tests.csproj", "{1C1F1719-5BAF-43B5-82B3-37C5D38739EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Data.PostgreSQL", "src\ParusRx.Data.PostgreSQL\ParusRx.Data.PostgreSQL.csproj", "{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.DaData.PostgreSQL.Tests", "test\ParusRx.DaData.PostgreSQL.Tests\ParusRx.DaData.PostgreSQL.Tests.csproj", "{CEB78930-234A-42DF-9571-8F2430B0DEB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80B528ED-DB5F-4243-BCAB-3A7DB509B13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B528ED-DB5F-4243-BCAB-3A7DB509B13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B528ED-DB5F-4243-BCAB-3A7DB509B13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B528ED-DB5F-4243-BCAB-3A7DB509B13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F19E074-3ABD-488E-8B39-3810CDF41646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F19E074-3ABD-488E-8B39-3810CDF41646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F19E074-3ABD-488E-8B39-3810CDF41646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F19E074-3ABD-488E-8B39-3810CDF41646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FDD84C-7957-40BA-8FB9-417A8D11B808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FDD84C-7957-40BA-8FB9-417A8D11B808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FDD84C-7957-40BA-8FB9-417A8D11B808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FDD84C-7957-40BA-8FB9-417A8D11B808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1F1719-5BAF-43B5-82B3-37C5D38739EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1F1719-5BAF-43B5-82B3-37C5D38739EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1F1719-5BAF-43B5-82B3-37C5D38739EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1F1719-5BAF-43B5-82B3-37C5D38739EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB78930-234A-42DF-9571-8F2430B0DEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB78930-234A-42DF-9571-8F2430B0DEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB78930-234A-42DF-9571-8F2430B0DEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB78930-234A-42DF-9571-8F2430B0DEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80B528ED-DB5F-4243-BCAB-3A7DB509B13A} = {919AA127-8407-4436-BC62-B7D0EA477DD9}
+		{4F19E074-3ABD-488E-8B39-3810CDF41646} = {087B096F-8231-450F-8258-648D33C2FF13}
+		{22FDD84C-7957-40BA-8FB9-417A8D11B808} = {919AA127-8407-4436-BC62-B7D0EA477DD9}
+		{1C1F1719-5BAF-43B5-82B3-37C5D38739EB} = {087B096F-8231-450F-8258-648D33C2FF13}
+		{EA8A173B-D800-4FFE-BC5F-2D6CFD0C465B} = {919AA127-8407-4436-BC62-B7D0EA477DD9}
+		{CEB78930-234A-42DF-9571-8F2430B0DEB0} = {087B096F-8231-450F-8258-648D33C2FF13}
+	EndGlobalSection
+EndGlobal
