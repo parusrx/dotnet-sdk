@@ -15,6 +15,7 @@ public static class ServiceCollectionExtensions
     /// Adds the data access services to the specified <see cref="IServiceCollection"/>.
     /// </summary>
     /// <param name="services">The <see cref="IServiceCollection"/> to add the services to.</param>
+    /// <param name="optionsAction">An <see cref="Action{T}"/> to configure the provided <see cref="IConnection"/>.</param>
     /// <returns>The <see cref="IServiceCollection"/> so that additional calls can be chained.</returns>
     public static IServiceCollection AddDataAccess(this IServiceCollection services, Action<IConnection>? optionsAction = null)
     {
