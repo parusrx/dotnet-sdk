@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Description>ParusRx XML utilities for .NET</Description>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>$(PackageTags);xml</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>
