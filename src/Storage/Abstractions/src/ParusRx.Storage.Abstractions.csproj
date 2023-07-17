@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>ParusRx Data Storage abstractions.</Description>
+    <Description>Parus RX Data Storage abstractions.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageTags>$(PackageTags);storage</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>
