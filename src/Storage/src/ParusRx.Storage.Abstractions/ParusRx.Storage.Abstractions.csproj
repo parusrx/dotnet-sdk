@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>ParusRx Data Storage abstractions.</Description>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageTags>$(PackageTags);storage</PackageTags>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
