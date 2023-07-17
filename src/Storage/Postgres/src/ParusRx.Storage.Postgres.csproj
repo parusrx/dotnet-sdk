@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ParusRx.Storage.Abstractions\ParusRx.Storage.Abstractions.csproj" />
-    <ProjectReference Include="..\..\..\Data\src\ParusRx.Data.PostgreSql\ParusRx.Data.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\Abstractions\src\ParusRx.Storage.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Data\PostgreSql\src\ParusRx.Data.PostgreSql.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ParusRx.EventBus\ParusRx.EventBus.csproj" />
+    <ProjectReference Include="..\..\EventBus\src\ParusRx.EventBus.csproj" />
   </ItemGroup>
 
   <ItemGroup>

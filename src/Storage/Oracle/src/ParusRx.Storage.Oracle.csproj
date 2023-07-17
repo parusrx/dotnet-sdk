@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ParusRx.Storage.Abstractions\ParusRx.Storage.Abstractions.csproj" />
-    <ProjectReference Include="..\..\..\Data\src\ParusRx.Data.Oracle\ParusRx.Data.Oracle.csproj" />
+    <ProjectReference Include="..\..\Abstractions\src\ParusRx.Storage.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Data\Oracle\src\ParusRx.Data.Oracle.csproj" />
   </ItemGroup>
 
   <ItemGroup>
