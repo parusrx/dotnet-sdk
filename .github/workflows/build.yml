@@ -28,13 +28,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup .NET
+      - name: Setup .NET 6.0 and .NET 7.0
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: |
-            '6.0.x'
-            '7.0.x'
-            '8.0.x'
+            6.0.408
+            7.0.302
+
+      - name: Setup .NET 8.0 Preview
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
           dotnet-quality: 'preview'
 
       - name: Restore dependencies
