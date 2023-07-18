@@ -2,7 +2,7 @@
   <ItemGroup Label="Package versions for .NET 6.0"
     Condition="'$(TargetFramework)' == 'net6.0'">
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0-preview.6.23329.7" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
     <PackageVersion Include="Dapper" Version="2.0.143" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
@@ -22,7 +22,7 @@
   <ItemGroup Label="Package versions for .NET 7.0"
     Condition="'$(TargetFramework)' == 'net7.0'">
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0-preview.6.23329.7" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
     <PackageVersion Include="Dapper" Version="2.0.143" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
