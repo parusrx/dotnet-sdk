@@ -2,7 +2,6 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System.Data;
-using Microsoft.Extensions.Logging;
 using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
 using ParusRx.Data.Core;
@@ -12,19 +11,15 @@ namespace ParusRx.Storage.Oracle;
 /// <summary>
 /// Provides methods allowing to manage the metadata in an Oracle database.
 /// </summary>
-public class OracleParusRxStore : IParusRxStore
+internal sealed class OracleParusRxStore : IParusRxStore
 {
-    private readonly ILogger<OracleParusRxStore> _logger;
-
     /// <summary>
     /// Initializes a new instance of the <see cref="OracleParusRxStore"/> class.
     /// </summary>
     /// <param name="connection">Connection to database.</param>
-    /// <param name="logger">The logger to use.</param>
-    public OracleParusRxStore(IConnection connection, ILogger<OracleParusRxStore> logger)
+    public OracleParusRxStore(IConnection connection)
     {
         Connection = connection;
-        _logger = logger;
     }
 
     /// <summary>
@@ -66,10 +61,8 @@ public class OracleParusRxStore : IParusRxStore
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Request read data error.");
+            throw new InvalidOperationException($"Failed to read request with id {id}", ex);
         }
-
-        return Array.Empty<byte>();
     }
 
     /// <inheritdoc/>
@@ -108,7 +101,7 @@ public class OracleParusRxStore : IParusRxStore
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error saving response data.");
+            throw new InvalidOperationException($"Failed to save response for request with id {id}", ex);
         }
     }
 
@@ -148,7 +141,7 @@ public class OracleParusRxStore : IParusRxStore
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Failed to send error.");
+            throw new InvalidOperationException($"Failed to set error for request with id {id}", ex);
         }
     }
 }
