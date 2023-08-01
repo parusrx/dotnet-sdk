@@ -89,4 +89,5 @@ The following table shows the compatability matrix for the Parus RX SDK v1.0.0-*
 | [ParusRx.Storage.Postgres](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Xml](https://www.nuget.org/packages/ParusRx.Xml/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 
-> **Note:** The Parus RX SDK v1.0.0-* for .NET is currently in preview.
+> **Note:** 
+> **The Parus RX SDK for .NET is currently in preview.**
