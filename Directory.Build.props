@@ -18,4 +18,6 @@
     <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
 
+  <Import Project="eng\Versions.props" />
+
 </Project>
