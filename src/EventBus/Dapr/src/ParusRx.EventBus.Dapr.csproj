@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Parus RX Event Bus components for Dapr</Description>
+    <Description>The implementation of the Event Bus for Parus RX by Dapr.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageTags>$(PackageTags);eventbus;dapr</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>

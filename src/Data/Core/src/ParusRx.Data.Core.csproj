@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Parus RX Data Access components for .NET</Description>
+    <Description>The core implementation for data access providers in Parus RX.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageTags>$(PackageTags);core</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>

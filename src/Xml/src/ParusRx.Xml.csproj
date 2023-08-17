@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Parus RX XML utilities for .NET</Description>
+    <Description>Provides classes for working with XML for Parus RX.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>$(PackageTags);xml</PackageTags>

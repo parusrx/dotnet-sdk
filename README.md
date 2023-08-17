@@ -57,18 +57,18 @@ This repo builds the following NuGet packages:
 
 | Package | Description | NuGet |
 | ------- | ----------- | ----- |
-| [ParusRx.Data.Core](https://www.nuget.org/packages/ParusRx.Data.Core/) | Core data access library | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Data.Core?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Data.Core/) |
-| [ParusRx.Data.Oracle](https://www.nuget.org/packages/ParusRx.Data.Oracle/) | Oracle data access library | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Data.Oracle?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Data.Oracle/) |
-| [ParusRx.Data.PostgreSql](https://www.nuget.org/packages/ParusRx.Data.PostgreSQL/) | PostgreSQL data access library | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Data.PostgreSql?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Data.PostgreSql/) |
-| [ParusRx.EventBus.Abstractions](https://www.nuget.org/packages/ParusRx.EventBus.Abstractions/) | Event bus abstractions | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus.Abstractions?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus.Abstractions/) |
-| [ParusRx.EventBus](https://www.nuget.org/packages/ParusRx.EventBus/) | Event bus implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus/) |
-| [ParusRx.EventBus.Dapr](https://www.nuget.org/packages/ParusRx.EventBus.Dapr/) | Dapr event bus implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus.Dapr?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus.Dapr/) |
-| [ParusRx.EventBus.MultiTenancy](https://www.nuget.org/packages/ParusRx.EventBus.MultiTenancy/) | Multi-tenancy event bus implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus.MultiTenancy?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus.MultiTenancy/) |
-| [ParusRx.MultiTenancy](https://www.nuget.org/packages/ParusRx.MultiTenancy/) | Multi-tenancy library | [![NuGet Info](https://buildstats.info/nuget/ParusRx.MultiTenancy?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.MultiTenancy/) |
-| [ParusRx.Storage.Abstractions](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) | Storage abstractions | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Abstractions?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) |
-| [ParusRx.Storage.Oracle](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) | Oracle storage implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Oracle?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) |
-| [ParusRx.Storage.Postgres](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) | PostgreSQL storage implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Postgres?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) |
-| [ParusRx.Xml](https://www.nuget.org/packages/ParusRx.Xml/) | XML library | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Xml?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Xml/) |
+| [ParusRx.Data.Core](https://www.nuget.org/packages/ParusRx.Data.Core/) | The core implementation for data access providers in Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Data.Core?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Data.Core/) |
+| [ParusRx.Data.Oracle](https://www.nuget.org/packages/ParusRx.Data.Oracle/) | Provider for Oracle Database in Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Data.Oracle?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Data.Oracle/) |
+| [ParusRx.Data.PostgreSql](https://www.nuget.org/packages/ParusRx.Data.PostgreSQL/) | Provider for PostgreSQL Database in Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Data.PostgreSql?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Data.PostgreSql/) |
+| [ParusRx.EventBus.Abstractions](https://www.nuget.org/packages/ParusRx.EventBus.Abstractions/) | Provides Event Bus abstractions for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus.Abstractions?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus.Abstractions/) |
+| [ParusRx.EventBus](https://www.nuget.org/packages/ParusRx.EventBus/) | Provides Event Bus for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus/) |
+| [ParusRx.EventBus.Dapr](https://www.nuget.org/packages/ParusRx.EventBus.Dapr/) | The implementation of the Event Bus for Parus RX by Dapr. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus.Dapr?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus.Dapr/) |
+| [ParusRx.EventBus.MultiTenancy](https://www.nuget.org/packages/ParusRx.EventBus.MultiTenancy/) | Provides Event Bus with Multi-Tenancy for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.EventBus.MultiTenancy?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.EventBus.MultiTenancy/) |
+| [ParusRx.MultiTenancy](https://www.nuget.org/packages/ParusRx.MultiTenancy/) | Provides Multi-Tenancy for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.MultiTenancy?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.MultiTenancy/) |
+| [ParusRx.Storage.Abstractions](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) | Storage abstractions for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Abstractions?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) |
+| [ParusRx.Storage.Oracle](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) | Provides Storage for Oracle Database to Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Oracle?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) |
+| [ParusRx.Storage.PostgreSql](https://www.nuget.org/packages/ParusRx.Storage.PostgreSql/) | PostgreSQL storage implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.PostgreSql?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) |
+| [ParusRx.Xml](https://www.nuget.org/packages/ParusRx.Xml/) | Provides classes for working with XML for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Xml?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Xml/) |
 
 ## Compatability matrix
 
@@ -86,7 +86,7 @@ The following table shows the compatability matrix for the Parus RX SDK v1.0.0-*
 | [ParusRx.MultiTenancy](https://www.nuget.org/packages/ParusRx.MultiTenancy/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Storage.Abstractions](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Storage.Oracle](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [ParusRx.Storage.Postgres](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [ParusRx.Storage.PostgreSql](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Xml](https://www.nuget.org/packages/ParusRx.Xml/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 
 > **Note:** 

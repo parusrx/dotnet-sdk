@@ -52,9 +52,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oracle", "Oracle", "{3DCAC8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Storage.Oracle", "src\Storage\Oracle\src\ParusRx.Storage.Oracle.csproj", "{192C31A8-05F0-4E45-8CB0-892525B14922}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postgres", "Postgres", "{1B0258F6-2738-4592-A66F-377AC7727C6A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostgreSql", "PostgreSql", "{1B0258F6-2738-4592-A66F-377AC7727C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Storage.Postgres", "src\Storage\Postgres\src\ParusRx.Storage.Postgres.csproj", "{820AB560-E045-4A0B-97E0-727578D17FE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Storage.PostgreSql", "src\Storage\Postgres\src\ParusRx.Storage.PostgreSql.csproj", "{820AB560-E045-4A0B-97E0-727578D17FE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xml", "Xml", "{151470D0-2949-4F42-BE4C-699B8BA59BDC}"
 EndProject
@@ -72,9 +72,6 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B094F109-5F69-448A-94A1-B55B2B367A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -145,6 +142,9 @@ Global
 		{535710C4-93F1-46B5-9E1C-6A47C8C07BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{535710C4-93F1-46B5-9E1C-6A47C8C07BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{535710C4-93F1-46B5-9E1C-6A47C8C07BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{879745CD-EA79-42E2-A5E5-19405E0D352C} = {AD9722B3-CF5A-48BC-A4DA-1ABFFA6A6A86}

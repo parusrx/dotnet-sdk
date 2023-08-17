@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Parus RX Event Bus components for .NET</Description>
+    <Description>Provides Event Bus for Parus RX.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageTags>$(PackageTags);eventbus</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>

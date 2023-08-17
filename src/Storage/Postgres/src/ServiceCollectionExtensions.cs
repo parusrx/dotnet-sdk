@@ -2,7 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using ParusRx.Storage;
-using ParusRx.Storage.Postgres;
+using ParusRx.Storage.PostgreSql;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

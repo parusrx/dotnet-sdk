@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Parus RX Data Storage for PostgreSQL.</Description>
+    <Description>Provides Storage for PostgreSQL to Parus RX.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageTags>$(PackageTags);storage;postgres</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>

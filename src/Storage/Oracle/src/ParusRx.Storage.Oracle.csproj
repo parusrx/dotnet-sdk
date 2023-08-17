@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Parus RX Data Storage for Oracle.</Description>
+    <Description>Provides Storage for Oracle Database to Parus RX.</Description>
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <PackageTags>$(PackageTags);storage;oracle</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>
