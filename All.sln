@@ -54,7 +54,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Storage.Oracle", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PostgreSql", "PostgreSql", "{1B0258F6-2738-4592-A66F-377AC7727C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Storage.PostgreSql", "src\Storage\Postgres\src\ParusRx.Storage.PostgreSql.csproj", "{820AB560-E045-4A0B-97E0-727578D17FE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParusRx.Storage.PostgreSql", "src\Storage\PostgreSql\src\ParusRx.Storage.PostgreSql.csproj", "{820AB560-E045-4A0B-97E0-727578D17FE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xml", "Xml", "{151470D0-2949-4F42-BE4C-699B8BA59BDC}"
 EndProject
