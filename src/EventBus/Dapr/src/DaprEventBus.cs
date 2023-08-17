@@ -11,11 +11,6 @@ namespace ParusRx.EventBus.Dapr;
 /// </summary>
 public class DaprEventBus : IEventBus
 {
-    /// <summary>
-    /// The Dapr pub/sub name.
-    /// </summary>
-    public const string DAPR_PUBSUB_NAME = "pubsub";
-
     private readonly DaprClient _dapr;
     private readonly ILogger<DaprEventBus> _logger;
 
@@ -34,11 +29,11 @@ public class DaprEventBus : IEventBus
     public async Task PublishAsync<TIntegrationEvent>(string topicName, TIntegrationEvent @event, CancellationToken cancellationToken = default)
         where TIntegrationEvent : IntegrationEvent
     {
-        _logger.LogInformation("Publishing event {EventId} to topic {PubSubName}.{TopicName}", @event.Id, DAPR_PUBSUB_NAME, topicName);
+        _logger.LogInformation("Publishing event {EventId} to topic {PubSubName}.{TopicName}", @event.Id, EventBusConstants.DaprPubSubName, topicName);
 
         // We need to make sure that we pass the concrete type to PublishEventAsync,
         // which can be accomplished by casting the event to dynamic. This ensures
         // that all event fields are properly serialized.
-        await _dapr.PublishEventAsync(DAPR_PUBSUB_NAME, topicName, @event, cancellationToken);
+        await _dapr.PublishEventAsync(EventBusConstants.DaprPubSubName, topicName, @event, cancellationToken);
     }
 }
