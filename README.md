@@ -22,7 +22,7 @@ The Parus RX SDK for .NET is available on [NuGet](https://www.nuget.org/packages
 
 ```powershell
 
-Install-Package ParusRx.Data.Core -Version 1.0.0-preview.2.5807923165.4
+Install-Package ParusRx.Data.Core -Version 1.0.0-rc.1.5890263732.6
 
 ```
 
@@ -30,7 +30,7 @@ Install-Package ParusRx.Data.Core -Version 1.0.0-preview.2.5807923165.4
 
 ```bash
 
-dotnet add package ParusRx.Data.Core --version 1.0.0-preview.2.5807923165.4
+dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5890263732.6
 
 ```
 
@@ -38,7 +38,7 @@ dotnet add package ParusRx.Data.Core --version 1.0.0-preview.2.5807923165.4
 
 ```xml
 
-<PackageReference Include="ParusRx.Data.Core" Version="1.0.0-preview.2.5807923165.4" />
+<PackageReference Include="ParusRx.Data.Core" Version="1.0.0-rc.1.5890263732.6" />
 
 ```
 
@@ -46,7 +46,7 @@ dotnet add package ParusRx.Data.Core --version 1.0.0-preview.2.5807923165.4
 
 ```bash
 
-paket add ParusRx.Data.Core --version 1.0.0-preview.2.5807923165.4
+paket add ParusRx.Data.Core --version 1.0.0-rc.1.5890263732.6
 
 ```
 
@@ -67,7 +67,7 @@ This repo builds the following NuGet packages:
 | [ParusRx.MultiTenancy](https://www.nuget.org/packages/ParusRx.MultiTenancy/) | Provides Multi-Tenancy for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.MultiTenancy?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.MultiTenancy/) |
 | [ParusRx.Storage.Abstractions](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) | Storage abstractions for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Abstractions?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) |
 | [ParusRx.Storage.Oracle](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) | Provides Storage for Oracle Database to Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.Oracle?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) |
-| [ParusRx.Storage.PostgreSql](https://www.nuget.org/packages/ParusRx.Storage.PostgreSql/) | PostgreSQL storage implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.PostgreSql?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) |
+| [ParusRx.Storage.PostgreSql](https://www.nuget.org/packages/ParusRx.Storage.PostgreSql/) | PostgreSQL storage implementation | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Storage.PostgreSql?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Storage.PostgreSql/) |
 | [ParusRx.Xml](https://www.nuget.org/packages/ParusRx.Xml/) | Provides classes for working with XML for Parus RX. | [![NuGet Info](https://buildstats.info/nuget/ParusRx.Xml?includePreReleases=true)](https://www.nuget.org/packages/ParusRx.Xml/) |
 
 ## Compatability matrix
@@ -86,8 +86,5 @@ The following table shows the compatability matrix for the Parus RX SDK v1.0.0-*
 | [ParusRx.MultiTenancy](https://www.nuget.org/packages/ParusRx.MultiTenancy/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Storage.Abstractions](https://www.nuget.org/packages/ParusRx.Storage.Abstractions/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Storage.Oracle](https://www.nuget.org/packages/ParusRx.Storage.Oracle/) | ✔ | ✔ | ✔ | ✔ | ✔ |
-| [ParusRx.Storage.PostgreSql](https://www.nuget.org/packages/ParusRx.Storage.Postgres/) | ✔ | ✔ | ✔ | ✔ | ✔ |
+| [ParusRx.Storage.PostgreSql](https://www.nuget.org/packages/ParusRx.Storage.PostgreSql/) | ✔ | ✔ | ✔ | ✔ | ✔ |
 | [ParusRx.Xml](https://www.nuget.org/packages/ParusRx.Xml/) | ✔ | ✔ | ✔ | ✔ | ✔ |
-
-> **Note:** 
-> **The Parus RX SDK for .NET is currently in preview.**
