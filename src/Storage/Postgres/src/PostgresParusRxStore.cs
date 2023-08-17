@@ -39,7 +39,7 @@ internal sealed class PostgresParusRxStore : IParusRxStore
 
             var param = new DynamicParameters();
             param.Add("sID", id);
-            param.Add("sMESSAGE", message);
+            param.Add("sNOTE", message);
 
             await connection.QueryAsync<int>("PARUS.PKG_PRXMB$SET_ERROR", param, commandType: CommandType.StoredProcedure);
 
