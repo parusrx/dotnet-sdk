@@ -1,7 +1,6 @@
 ﻿// Copyright (c) The Parus RX Authors. All rights reserved.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
-using System.Data;
 using Npgsql;
 using ParusRx.Data.Core;
 
@@ -34,11 +33,15 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            using var command = new NpgsqlCommand("SELECT parus.pkg_prxmb$set_error(@sid, @snote)", connection);
+            using var transaction = connection.BeginTransaction();
+
+            using var command = new NpgsqlCommand("SELECT parus.pkg_prxmb$set_error(@sid, @snote)", connection, transaction);
             command.Parameters.AddWithValue("sid", id);
             command.Parameters.AddWithValue("snote", message);
 
             await command.ExecuteNonQueryAsync();
+
+            await transaction.CommitAsync();
         }
         catch(Exception ex)
         {
@@ -79,11 +82,15 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
+            using var transaction = connection.BeginTransaction();
+
             using var command = new NpgsqlCommand("SELECT parus.pkg_prxmb$set_response(@sid, @bresponse)", connection);
             command.Parameters.AddWithValue("sid", id);
             command.Parameters.AddWithValue("bresponse", data);
 
             await command.ExecuteNonQueryAsync();
+
+            await transaction.CommitAsync();
         }
         catch(Exception ex)
         {
