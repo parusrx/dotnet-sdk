@@ -22,7 +22,7 @@ The Parus RX SDK for .NET is available on [NuGet](https://www.nuget.org/packages
 
 ```powershell
 
-Install-Package ParusRx.Data.Core -Version 1.0.0-rc.1.5973288043.7
+Install-Package ParusRx.Data.Core -Version 1.0.0-rc.1.5973581827.8
 
 ```
 
@@ -30,7 +30,7 @@ Install-Package ParusRx.Data.Core -Version 1.0.0-rc.1.5973288043.7
 
 ```bash
 
-dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5973288043.7
+dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5973581827.8
 
 ```
 
@@ -38,7 +38,7 @@ dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5973288043.7
 
 ```xml
 
-<PackageReference Include="ParusRx.Data.Core" Version="1.0.0-rc.1.5973288043.7" />
+<PackageReference Include="ParusRx.Data.Core" Version="1.0.0-rc.1.5973581827.8" />
 
 ```
 
@@ -46,7 +46,7 @@ dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5973288043.7
 
 ```bash
 
-paket add ParusRx.Data.Core --version 1.0.0-rc.1.5973288043.7
+paket add ParusRx.Data.Core --version 1.0.0-rc.1.5973581827.8
 
 ```
 
