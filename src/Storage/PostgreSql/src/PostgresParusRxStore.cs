@@ -34,9 +34,9 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            using var command = new NpgsqlCommand("PARUS.PKG_PRXMB$SET_ERROR(@sID, @sNOTE)", connection);
-            command.Parameters.AddWithValue("sID", id);
-            command.Parameters.AddWithValue("sNOTE", message);
+            using var command = new NpgsqlCommand("SELECT parus.pkg_prxmb$set_error(@sid, @snote)", connection);
+            command.Parameters.AddWithValue("sid", id);
+            command.Parameters.AddWithValue("snote", message);
 
             await command.ExecuteNonQueryAsync();
         }
@@ -54,8 +54,8 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            using var command = new NpgsqlCommand("PARUS.PKG_PRXMB$GET_REQUEST(@sID)", connection);
-            command.Parameters.AddWithValue("sID", id);
+            using var command = new NpgsqlCommand("SELECT parus.pkg_prxmb$get_request(@sid)", connection);
+            command.Parameters.AddWithValue("sid", id);
 
             using var reader = await command.ExecuteReaderAsync();
             while (await reader.ReadAsync())
@@ -79,9 +79,9 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            using var command = new NpgsqlCommand("PARUS.PKG_PRXMB$SET_RESPONSE(@sID, @bRESPONSE)", connection);
-            command.Parameters.AddWithValue("sID", id);
-            command.Parameters.AddWithValue("bRESPONSE", data);
+            using var command = new NpgsqlCommand("SELECT parus.pkg_prxmb$set_response(@sid, @bresponse)", connection);
+            command.Parameters.AddWithValue("sid", id);
+            command.Parameters.AddWithValue("bresponse", data);
 
             await command.ExecuteNonQueryAsync();
         }
