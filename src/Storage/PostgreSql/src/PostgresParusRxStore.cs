@@ -2,7 +2,6 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using System.Data;
-using Dapper;
 using Npgsql;
 using ParusRx.Data.Core;
 
@@ -35,15 +34,11 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            using var transaction = connection.BeginTransaction();
+            using var command = new NpgsqlCommand("PARUS.PKG_PRXMB$SET_ERROR(@sID, @sNOTE)", connection);
+            command.Parameters.AddWithValue("sID", id);
+            command.Parameters.AddWithValue("sNOTE", message);
 
-            var param = new DynamicParameters();
-            param.Add("sID", id);
-            param.Add("sNOTE", message);
-
-            await connection.QueryAsync<int>("PARUS.PKG_PRXMB$SET_ERROR", param, commandType: CommandType.StoredProcedure);
-
-            await transaction.CommitAsync();
+            await command.ExecuteNonQueryAsync();
         }
         catch(Exception ex)
         {
@@ -59,13 +54,16 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            var param = new DynamicParameters();
-            param.Add("sID", id);
-            param.Add("bREQUEST", dbType: DbType.Binary, direction: ParameterDirection.Output);
+            using var command = new NpgsqlCommand("PARUS.PKG_PRXMB$GET_REQUEST(@sID)", connection);
+            command.Parameters.AddWithValue("sID", id);
 
-            await connection.QueryAsync<int>("PARUS.PKG_PRXMB$GET_REQUEST", param, commandType: CommandType.StoredProcedure);
+            using var reader = await command.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+            {
+                return reader.GetFieldValue<byte[]>(0);
+            }
 
-            return param.Get<byte[]>("bREQUEST");
+            return Array.Empty<byte>();
         }
         catch(Exception ex)
         {
@@ -81,15 +79,11 @@ internal sealed class PostgresParusRxStore : IParusRxStore
             using var connection = (NpgsqlConnection)Connection.ConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
-            using var transaction = connection.BeginTransaction();
+            using var command = new NpgsqlCommand("PARUS.PKG_PRXMB$SET_RESPONSE(@sID, @bRESPONSE)", connection);
+            command.Parameters.AddWithValue("sID", id);
+            command.Parameters.AddWithValue("bRESPONSE", data);
 
-            var param = new DynamicParameters();
-            param.Add("sID", id);
-            param.Add("bRESPONSE", value: data, dbType: DbType.Binary, direction: ParameterDirection.Input);
-
-            await connection.QueryAsync<int>("PARUS.PKG_PRXMB$SET_RESPONSE", param, commandType: CommandType.StoredProcedure);
-
-            await transaction.CommitAsync();
+            await command.ExecuteNonQueryAsync();
         }
         catch(Exception ex)
         {

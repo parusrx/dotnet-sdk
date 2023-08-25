@@ -13,8 +13,4 @@
     <ProjectReference Include="..\..\..\Data\PostgreSql\src\ParusRx.Data.PostgreSql.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Dapper" />
-  </ItemGroup>
-
 </Project>
