@@ -22,7 +22,7 @@ The Parus RX SDK for .NET is available on [NuGet](https://www.nuget.org/packages
 
 ```powershell
 
-Install-Package ParusRx.Data.Core -Version 1.0.0-rc.1.5975920134.9
+Install-Package ParusRx.Data.Core -Version 1.0.0-rc.2.6177943126.10
 
 ```
 
@@ -30,7 +30,7 @@ Install-Package ParusRx.Data.Core -Version 1.0.0-rc.1.5975920134.9
 
 ```bash
 
-dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5975920134.9
+dotnet add package ParusRx.Data.Core --version 1.0.0-rc.2.6177943126.10
 
 ```
 
@@ -38,7 +38,7 @@ dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5975920134.9
 
 ```xml
 
-<PackageReference Include="ParusRx.Data.Core" Version="1.0.0-rc.1.5975920134.9" />
+<PackageReference Include="ParusRx.Data.Core" Version="1.0.0-rc.2.6177943126.10" />
 
 ```
 
@@ -46,7 +46,7 @@ dotnet add package ParusRx.Data.Core --version 1.0.0-rc.1.5975920134.9
 
 ```bash
 
-paket add ParusRx.Data.Core --version 1.0.0-rc.1.5975920134.9
+paket add ParusRx.Data.Core --version 1.0.0-rc.2.6177943126.10
 
 ```
 
@@ -72,7 +72,7 @@ This repo builds the following NuGet packages:
 
 ## Compatability matrix
 
-The following table shows the compatability matrix for the Parus RX SDK v1.0.0-* for .NET.
+The following table shows the compatability matrix for the Parus RX SDK v1.0.0 RC 2 for .NET.
 
 | Package | .NET 6.0 | .NET 7.0 | .NET 8.0 |
 | ------- | -------- | -------- | -------- | 
