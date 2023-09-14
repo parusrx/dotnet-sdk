@@ -1,6 +1,6 @@
 <Project>
   <ItemGroup Label="Package versions for .NET 6.0" Condition="'$(TargetFramework)' == 'net6.0'">
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0-rc.1.23419.4" />
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
     <PackageVersion Include="Oracle.ManagedDataAccess.Core" Version="23.2.0-dev" />
@@ -15,7 +15,7 @@
     <PackageVersion Include="coverlet.collector" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup Label="Package versions for .NET 7.0" Condition="'$(TargetFramework)' == 'net7.0'">
-    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0-rc.1.23419.4" />
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
     <PackageVersion Include="Oracle.ManagedDataAccess.Core" Version="23.2.0-dev" />
