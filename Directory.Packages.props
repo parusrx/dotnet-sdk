@@ -9,7 +9,7 @@
       Note: the folowing reference are exclusively used in the test project
     -->
     <PackageVersion Include="Moq" Version="4.20.69" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0-preview-23424-02" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0-release-23468-02" />
     <PackageVersion Include="xunit" Version="2.5.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.1" />
     <PackageVersion Include="coverlet.collector" Version="6.0.0" />
@@ -24,7 +24,7 @@
       Note: the folowing reference are exclusively used in the test project
     -->
     <PackageVersion Include="Moq" Version="4.20.69" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0-preview-23424-02" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0-release-23468-02" />
     <PackageVersion Include="xunit" Version="2.5.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.1" />
     <PackageVersion Include="coverlet.collector" Version="6.0.0" />
@@ -38,7 +38,7 @@
     <!--
       Note: the folowing reference are exclusively used in the test project
     -->
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0-preview-23424-02" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0-release-23468-02" />
     <PackageVersion Include="Moq" Version="4.20.69" />
     <PackageVersion Include="xunit" Version="2.5.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.1" />
