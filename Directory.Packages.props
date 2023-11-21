@@ -4,7 +4,7 @@
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
     <PackageVersion Include="Oracle.ManagedDataAccess.Core" Version="23.2.0-dev" />
-    <PackageVersion Include="Npgsql" Version="8.0.0-preview.4" />
+    <PackageVersion Include="Npgsql" Version="8.0.0" />
     <!--
       Note: the folowing reference are exclusively used in the test project
     -->
@@ -19,7 +19,7 @@
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
     <PackageVersion Include="Oracle.ManagedDataAccess.Core" Version="23.2.0-dev" />
-    <PackageVersion Include="Npgsql" Version="8.0.0-preview.4" />
+    <PackageVersion Include="Npgsql" Version="8.0.0" />
     <!--
       Note: the folowing reference are exclusively used in the test project
     -->
@@ -34,7 +34,7 @@
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0-rc.1.23419.4" />
     <PackageVersion Include="Dapr.Client" Version="1.11.0" />
     <PackageVersion Include="Oracle.ManagedDataAccess.Core" Version="23.2.0-dev" />
-    <PackageVersion Include="Npgsql" Version="8.0.0-preview.4" />
+    <PackageVersion Include="Npgsql" Version="8.0.0" />
     <!--
       Note: the folowing reference are exclusively used in the test project
     -->
